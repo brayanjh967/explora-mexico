@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explora México - Turismo</title>
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-red-600">Explora México</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#inicio" class="hover:text-red-600">Inicio</a></li>
+        <li><a href="#paquetes" class="hover:text-red-600">Paquetes</a></li>
+        <li><a href="#promociones" class="hover:text-red-600">Promociones</a></li>
+        <li><a href="#contacto" class="hover:text-red-600">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center" 
+    style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white max-w-2xl">
+      <h2 class="text-4xl md:text-6xl font-bold">Vive México como nunca antes</h2>
+      <p class="mt-4 text-lg">Descubre la cultura, la gastronomía y la biodiversidad en experiencias diseñadas para ti.</p>
+      <a href="#paquetes" class="mt-6 inline-block bg-red-600 px-6 py-3 rounded-2xl text-white font-semibold hover:bg-red-700 transition">Explorar Paquetes</a>
+    </div>
+  </section>
+
+  <!-- PAQUETES -->
+  <section id="paquetes" class="container mx-auto py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Nuestros Paquetes Destacados</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Paquete 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1524492449090-1a2d41d29d6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chichén Itzá" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold">Ruta Maya</h4>
+          <p class="mt-2 text-gray-600">Visita Chichén Itzá, cenotes sagrados y playas del Caribe. Un recorrido lleno de historia y paisajes.</p>
+          <p class="mt-4 font-semibold text-red-600">$899 USD</p>
+        </div>
+      </div>
+
+      <!-- Paquete 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1599420186946-7b5f76c5f0e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CDMX" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold">México Urbano</h4>
+          <p class="mt-2 text-gray-600">Explora la vibrante Ciudad de México, su gastronomía, museos y tradiciones únicas.</p>
+          <p class="mt-4 font-semibold text-red-600">$499 USD</p>
+        </div>
+      </div>
+
+      <!-- Paquete 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Oaxaca" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold">Sabores de Oaxaca</h4>
+          <p class="mt-2 text-gray-600">Una experiencia gastronómica inolvidable entre mercados, mezcal y tradiciones.</p>
+          <p class="mt-4 font-semibold text-red-600">$699 USD</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROMOCIONES -->
+  <section id="promociones" class="bg-red-50 py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Promociones Especiales</h3>
+      <p class="max-w-2xl mx-auto mb-10 text-gray-600">¡Viajar por México nunca fue tan accesible! Aprovecha nuestras promociones por tiempo limitado.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <div class="bg-white rounded-2xl shadow-md p-8">
+          <h4 class="text-2xl font-bold text-red-600">2x1 en Riviera Maya</h4>
+          <p class="mt-4 text-gray-600">Reserva un paquete doble y paga solo uno. Válido en reservas hasta el 30 de septiembre.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-8">
+          <h4 class="text-2xl font-bold text-red-600">10% de Descuento en Oaxaca</h4>
+          <p class="mt-4 text-gray-600">Descubre la riqueza cultural y gastronómica de Oaxaca con descuento exclusivo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASE INSPIRADORA -->
+  <section class="relative py-24 bg-cover bg-center" 
+    style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center text-white max-w-2xl mx-auto">
+      <h3 class="text-4xl md:text-5xl font-bold">"Viajar es coleccionar recuerdos que duran para siempre"</h3>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="container mx-auto py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Contáctanos</h3>
+    <form class="max-w-2xl mx-auto bg-white shadow-lg rounded-2xl p-8">
+      <div class="grid md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Nombre" class="border p-3 rounded-lg w-full" required>
+        <input type="email" placeholder="Correo" class="border p-3 rounded-lg w-full" required>
+      </div>
+      <textarea placeholder="Mensaje" rows="4" class="border p-3 rounded-lg w-full mt-6" required></textarea>
+      <button type="submit" class="mt-6 w-full bg-red-600 text-white font-semibold py-3 rounded-xl hover:bg-red-700 transition">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Explora México. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
